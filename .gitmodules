@@ -1,3 +1,6 @@
 [submodule "vendor/twitter"]
 	path = vendor/twitter
 	url = git://git.busydoingnothing.co.uk/twitter.git
+[submodule "vendor/textmate.el"]
+	path = vendor/textmate.el
+	url = git://github.com/anildigital/textmate.el.git
