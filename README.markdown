@@ -4,6 +4,12 @@ Inspired by [Phil Hagelberg's emacs-starter-kit](http://github.com/technomancy/e
 
 Since this starter kit is aimed at Aquamacs it has a very different project layout than Phil Hagelberg's emacs-starter-kit. The Aquamacs Emacs Starter Kit suits the philosophy of Aquamacs to be more Mac like in directory structure. It also slims down the starter kit a lot since Aquamacs already includes many of the same concepts.  This is a fork, and thus code conventions may not be interchangable.
 
+## What makes this fork different
+
+I'll be adding in packages that I've found to be useful or interesting. I've made a few additions (textmate.el and rvm.el) that you won't find in walter's starter kit. I'll continue to add whatever is useful for me as a ruby/rails web dev. 
+
+I am also by no means an Emacs expert so if you see something in here that I should be doing different, feel free to let me know.
+
 ## Guiding concepts in order of precedence
 
 * where possible use configuration (customization.el and Preferences.el) of Aquamacs to achieve desired result.
@@ -27,6 +33,9 @@ Since this starter kit is aimed at Aquamacs it has a very different project layo
 * cd ~/Library/Preferences/Aquamacs\ Emacs/
 * git clone git://github.com/tehcurtis/aquamacs-emacs-starter-kit.git
 * add the following to ~/Library/Preferences/Aquamacs\ Emacs/Preferences.el
+* cd ~/Library/Preferences/Aquamacs\ Emacs/aquamacs-emacs-starter-kit/
+* git submodule init
+* git submodule update
 
 <pre>
 <code>
@@ -40,9 +49,6 @@ Since this starter kit is aimed at Aquamacs it has a very different project layo
 (add-to-list 'load-path kitfiles-dir)
 (require 'init)
 
-(add-to-list 'load-path "~/Library/Preferences/Aquamacs\ Emacs/aquamacs-emacs-starter-kit/vendor/textmate.el")
-(require 'textmate)
-(textmate-mode)
 </code>
 </pre>
 
