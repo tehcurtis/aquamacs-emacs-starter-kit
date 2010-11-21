@@ -4,3 +4,6 @@
 [submodule "vendor/textmate.el"]
 	path = vendor/textmate.el
 	url = git://github.com/anildigital/textmate.el.git
+[submodule "vendor/rvm.el"]
+	path = vendor/rvm.el
+	url = https://github.com/senny/rvm.el.git

@@ -22,6 +22,7 @@
 
 (add-to-list 'load-path (concat kitfiles-dir "/vendor"))
 (add-to-list 'load-path (concat kitfiles-dir "/vendor/textmate.el/"))
+(add-to-list 'load-path (concat kitfiles-dir "/vendor/rvm.el/"))
 
 ;; Load up ELPA, the package manager
 
@@ -74,6 +75,10 @@
 
 (require 'textmate)
 (textmate-mode)
+
+(require ‘rvm)
+
+(rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
 
 ;;;;; end Vendor libs
 
