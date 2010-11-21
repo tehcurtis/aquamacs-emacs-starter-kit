@@ -79,6 +79,7 @@
 (require 'rvm)
 (rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
 
+(require 'haml-mode)
 ;;;;; end Vendor libs
 
 ;;;;; Aquamacs Emacs Starter Kit specific customizations
