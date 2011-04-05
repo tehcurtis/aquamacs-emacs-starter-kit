@@ -23,6 +23,7 @@
 (add-to-list 'load-path (concat kitfiles-dir "/vendor"))
 (add-to-list 'load-path (concat kitfiles-dir "/vendor/textmate.el/"))
 (add-to-list 'load-path (concat kitfiles-dir "/vendor/rvm.el/"))
+(add-to-list 'load-path (concat kitfiles-dir "/vendor/full-ack/"))
 
 ;; Load up ELPA, the package manager
 
@@ -37,6 +38,13 @@
 (require 'starter-kit-elpa)
 
 ;;;;; Vendor libs
+
+(add-to-list 'load-path "/path/to/full-ack")
+(autoload 'ack-same "full-ack" nil t)
+(autoload 'ack "full-ack" nil t)
+(autoload 'ack-find-same-file "full-ack" nil t)
+(autoload 'ack-find-file "full-ack" nil t)
+
 
 ;; general coding/editing niceties
 (require 'line-num)

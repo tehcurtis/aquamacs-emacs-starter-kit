@@ -7,3 +7,6 @@
 [submodule "vendor/rvm.el"]
 	path = vendor/rvm.el
 	url = https://github.com/senny/rvm.el.git
+[submodule "vendor/full-ack"]
+	path = vendor/full-ack
+	url = https://github.com/nschum/full-ack
