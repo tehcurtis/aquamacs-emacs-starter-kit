@@ -33,9 +33,6 @@ I am also by no means an Emacs expert so if you see something in here that I sho
 * cd ~/Library/Preferences/Aquamacs\ Emacs/
 * git clone git://github.com/tehcurtis/aquamacs-emacs-starter-kit.git
 * add the following to ~/Library/Preferences/Aquamacs\ Emacs/Preferences.el
-* cd ~/Library/Preferences/Aquamacs\ Emacs/aquamacs-emacs-starter-kit/
-* git submodule init
-* git submodule update
 
 <pre>
 <code>
@@ -51,6 +48,10 @@ I am also by no means an Emacs expert so if you see something in here that I sho
 
 </code>
 </pre>
+
+* cd ~/Library/Preferences/Aquamacs\ Emacs/aquamacs-emacs-starter-kit/
+* git submodule init
+* git submodule update
 
 * optionally set a theme by altering appearance.el to specify either an Aquamacs bundled theme or one included in this kit
 * restart Aquamacs -- Note: you may have to do this more than once to get all the ELPA packages downloaded and compiled
