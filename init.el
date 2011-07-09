@@ -46,7 +46,6 @@
 
 
 ;; general coding/editing niceties
-(require 'line-num)
 (require 'whitespace)
 
 ;; Additional Modes

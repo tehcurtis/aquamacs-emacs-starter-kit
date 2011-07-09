@@ -20,11 +20,11 @@
 ;; (color-theme-your-chosen-theme's-name)
 ;; if you choose twilight or blackboard here, uncomment require and initialize lines +
 ;; the relevant load and setting lines for the theme
-; (require 'color-theme)
+(require 'color-theme)
 ; (color-theme-initialize)
 ; (load-file (concat kitfiles-dir "/vendor" "/twilight.el"))
 ; (color-theme-twilight)
-; (load-file (concat kitfiles-dir "/vendor" "/blackboard.el"))
-; (color-theme-blackboard)
+(load-file (concat kitfiles-dir "/vendor" "/blackboard.el"))
+(color-theme-blackboard)
 
 (provide 'appearance)
