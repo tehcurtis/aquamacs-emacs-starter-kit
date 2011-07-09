@@ -47,9 +47,14 @@
 
 ;; general coding/editing niceties
 (require 'whitespace)
+(setq-default show-trailing-whitespace t)
+(add-hook 'before-save-hook
+                     'delete-trailing-whitespace
+                     nil t)
+
 
 ;; Additional Modes
-(require 'yaml-mode)                                                                                                        
+(require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 ;; Mac OS X/iPhone oriented, thanks http://github.com/topfunky/emacs-starter-kit/topfunky.el
@@ -89,7 +94,6 @@
 ;;;;; end Vendor libs
 
 ;;;;; Aquamacs Emacs Starter Kit specific customizations
-(require 'adjust-path)
 (require 'appearance)
 (require 'ido-setup)
 (require 'misc-mode-tweaks)
@@ -101,3 +105,6 @@
 ;;;;; end Aquamacs Emacs Starter Kit specific customizations
 
 (provide 'init)
+
+;; cleanup trailing whitespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
