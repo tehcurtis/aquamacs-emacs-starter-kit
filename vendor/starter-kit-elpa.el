@@ -7,7 +7,7 @@
 ;; and preferred by Walter McGinnis for Rails/Ruby work
 (defvar starter-kit-packages (list 'gist
 				   'magit
-                                   'paredit
+           'paredit
 				   'rinari
 				   'w3
 				   'yasnippet-bundle)
