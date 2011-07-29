@@ -85,9 +85,6 @@
 (global-set-key "\C-xt" 'twitter-get-friends-timeline)
 (add-hook 'twitter-status-edit-mode-hook 'longlines-mode)
 
-;;(require 'rvm)
-;;(rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
-
 (require 'haml-mode)
 ;;;;; end Vendor libs
 
