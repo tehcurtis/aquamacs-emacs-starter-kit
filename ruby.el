@@ -1,4 +1,5 @@
 ; rinari
+(add-to-list 'load-path "vendor")
 (vendor 'rinari)
 (setq rinari-tags-file-name "TAGS")
 (add-hook 'rinari-minor-mode-hook

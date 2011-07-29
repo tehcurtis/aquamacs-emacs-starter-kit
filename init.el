@@ -21,10 +21,10 @@
 ;;;;; begin code for Preferences.el
 
 (add-to-list 'load-path (concat kitfiles-dir "./vendor"))
-(add-to-list 'load-path (concat kitfiles-dir "./vendor/textmate.el/"))
-(add-to-list 'load-path (concat kitfiles-dir "./vendor/rvm.el/"))
-(add-to-list 'load-path (concat kitfiles-dir "./vendor/full-ack/"))
-(add-to-list 'load-path (concat kitfiles-dir "./vendor/rinari/"))
+;;(add-to-list 'load-path (concat kitfiles-dir "./vendor/textmate.el"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/rvm.el"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/full-ack"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/rinari"))
 
 ;; Load up ELPA, the package manager
 
@@ -85,11 +85,8 @@
 (global-set-key "\C-xt" 'twitter-get-friends-timeline)
 (add-hook 'twitter-status-edit-mode-hook 'longlines-mode)
 
-(require 'textmate)
-(textmate-mode)
-
-(require 'rvm)
-(rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
+;;(require 'rvm)
+;;(rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
 
 (require 'haml-mode)
 ;;;;; end Vendor libs
@@ -109,4 +106,6 @@
 ;; cleanup trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(load "defuns.el")
+(load "modes.el")
 (load "ruby.el")
