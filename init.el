@@ -96,7 +96,6 @@
 ;;;;; Aquamacs Emacs Starter Kit specific customizations
 (require 'appearance)
 (require 'ido-setup)
-(require 'misc-mode-tweaks)
 (require 'org-mode-stuff)
 (require 'override-aquamacs-to-be-more-emacsy)
 (require 'prefer-utf)
