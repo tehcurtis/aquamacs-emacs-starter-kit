@@ -25,6 +25,7 @@
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/rvm.el"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/full-ack"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/rinari"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/js2"))
 
 ;; Load up ELPA, the package manager
 

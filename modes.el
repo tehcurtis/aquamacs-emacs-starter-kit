@@ -6,3 +6,6 @@
 ;;rvm
 (load "./vendor/rvm.el/rvm.el")
 (rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
+
+;;javascript
+(load "javascript")
