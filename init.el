@@ -27,6 +27,11 @@
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/rinari"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/js3"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/json-mode"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/yasnippet-0.6.1c"))
+
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/Library/Preferences/Aquamacs Emacs/aquamacs-emacs-starter-kit/vendor/yasnippet-0.6.1c/snippets")
 
 ;; Load up ELPA, the package manager
 
@@ -52,12 +57,17 @@
 
 (autoload 'json-mode "json-mode" nil t)
 
+(add-hook 'js3-mode-hook
+          #'(lambda ()
+              (setq yas/mode-symbol 'js-mode)))
+
 ;; general coding/editing niceties
 (require 'whitespace)
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook
                      'delete-trailing-whitespace
                      nil t)
+
 
 
 ;; Additional Modes

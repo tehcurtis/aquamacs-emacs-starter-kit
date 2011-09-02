@@ -9,8 +9,7 @@
 				   'magit
            'paredit
 				   'rinari
-				   'w3
-				   'yasnippet-bundle)
+				   'w3)
   "Libraries that should be installed by default.")
 
 (defun starter-kit-elpa-install ()
