@@ -25,7 +25,7 @@
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/rvm.el"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/full-ack"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/rinari"))
-(add-to-list 'load-path (concat kitfiles-dir "./vendor/js2"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/js3"))
 
 ;; Load up ELPA, the package manager
 
@@ -45,6 +45,9 @@
 (autoload 'ack "full-ack" nil t)
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
+
+(autoload 'js3-mode "js3" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 
 
 ;; general coding/editing niceties
