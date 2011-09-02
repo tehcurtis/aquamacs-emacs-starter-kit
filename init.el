@@ -26,6 +26,7 @@
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/full-ack"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/rinari"))
 (add-to-list 'load-path (concat kitfiles-dir "./vendor/js3"))
+(add-to-list 'load-path (concat kitfiles-dir "./vendor/json-mode"))
 
 ;; Load up ELPA, the package manager
 
@@ -49,6 +50,7 @@
 (autoload 'js3-mode "js3" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js3-mode))
 
+(autoload 'json-mode "json-mode" nil t)
 
 ;; general coding/editing niceties
 (require 'whitespace)

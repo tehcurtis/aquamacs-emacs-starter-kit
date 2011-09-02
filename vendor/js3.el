@@ -1,3 +1,4 @@
+;;; https://github.com/thomblake/js3-mode
 ;;; js3.el -- an improved JavaScript editing mode
 ;;;
 
